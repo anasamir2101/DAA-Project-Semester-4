@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sort-buttons" id="div-container">
+      <div class="heading">
+        <h1>Sorting Algorithms</h1>
+      </div>
+      <div class="array-generator">
+        <input
+          type="text"
+          id="numberInput"
+          placeholder="Enter length of an array"
+        />
+        <button
+          class="sort-button"
+          id="getLengthBtn"
+          onclick="getArrayLength()"
+        >
+          <i class="fas fa-list-ul"></i>
+          Generate Array
+        </button>
+        <p id="number0" class="number0"></p>
+      </div>
+      <div>
+        <p class="arrayResult" id="output"></p>
+      </div>
+      <div class="sorting-buttons" id="sorting-buttons">
+        <button class="sort-button" onclick="bubbleSort()">
+          <i class="fas fa-sort-amount-up"></i>Bubble Sort
+        </button>
+        <button class="sort-button" onclick="selectionSort()">
+          <i class="fas fa-sort-amount-up"></i>Selection Sort
+        </button>
+        <button class="sort-button" onclick="insertionSort()">
+          <i class="fas fa-sort-amount-up"></i>Insertion Sort
+        </button>
+      </div>
+      <p id="output"></p>
+      <div class="button-container">
+        <button class="back-btn" onclick="refreshPage()">back</button>
+      </div>
+      <footer class="footer">
+        <p>developed by anas &copy; 2023 my website. All Rights Reserved</p>
+      </footer>
+    </div>
+    <div class="hide"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

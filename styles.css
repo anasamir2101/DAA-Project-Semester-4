@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+/* start screen */
+.start-screen {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(./images/1.jpg) no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.start-screen-info {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: darkgoldenrod;
+  letter-spacing: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid red;
+  padding: 1.2rem 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: -1rem;
+}
+.start-screen-info:hover {
+  transition: 1s all linear;
+  color: white;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: darkgoldenrod;
+  background: transparent;
+  font-size: 1.5rem;
+  border: 1px solid red;
+  margin-bottom: 3rem;
+}
+.btn:hover {
+  transition: 1s all linear;
+  cursor: pointer;
+  color: black;
+  background-color: aliceblue;
+}
+
+.submission {
+  color: aliceblue;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.submission h2 {
+  text-transform: uppercase;
+}
+.submission h3 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.submitted-to {
+  margin-bottom: 2rem;
+}
+.submitted-to h2 {
+  margin-bottom: 2rem;
+}
+.submitted-to h2:hover {
+  transition: all 0.3s linear;
+  color: darkkhaki;
+}
+.submitted-by h2:hover {
+  transition: all 0.3s linear;
+  color: darkkhaki;
+}
+.submitted-to h3 {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+}
+.submitted-to h3:hover {
+  transition: all 0.5s linear;
+  background-color: darkgoldenrod;
+  color: white;
+}
+.submitted-by h2 {
+  margin-bottom: 2rem;
+}
+.member-1:hover,
+.member-2:hover {
+  transition: all 0.5s linear;
+  background-color: darkgoldenrod;
+  color: white;
+}
+.member-1 {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.member-2 {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+.sort-buttons {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(./images/pexels-alina-vilchenko-3088369.jpg) no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: aqua;
+  text-align: center;
+}
+.sorting-buttons {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.sort-button {
+  border-radius: 2rem;
+}
+i {
+  margin-right: 0.5rem;
+  color: black;
+}
+.number0 {
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+.heading {
+  color: white;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+.array-generator {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.array-generator input {
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  background-color: black;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.array-generator input::placeholder {
+  color: white;
+}
+
+.arrayResult {
+  max-width: 100%;
+  margin: 2.5rem auto;
+}
+
+.sort-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  background-color: darkgoldenrod;
+  color: white;
+  cursor: pointer;
+}
+
+.sort-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.hide {
+  display: none;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#lengthResult {
+  margin-top: 10px;
+}
+
+/* ======
+For Swapping and Visualization
+*/
+.number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.green {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .start-screen-info {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .submission h2 {
+    font-size: 1.5rem;
+  }
+
+  .submitted-to h2,
+  .submitted-by h2 {
+    font-size: 1.5rem;
+  }
+
+  .member-1,
+  .member-2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+
+  .number0 {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .array-generator input {
+    font-size: 0.8rem;
+  }
+
+  .sort-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #lengthResult {
+    margin-top: 8px;
+  }
+}
+/* End of Media Queries */
+/* Back Button */
+.button-container {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+}
+.back-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: darkgoldenrod;
+  color: white;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.back-btn:hover {
+  background-color: white;
+  color: black;
+}
